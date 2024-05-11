@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+   
+    li{
+      display:inline
+    }
+    ul{
+      margin:10px;
+      padding:20px;
+    }
+    li{
+      padding:20px;
+
+    }
+    a{
+      text-decoration: none;
+    }
+    
+  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mental Health Analysis</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="logo">Mental Health Analysis</div>
+  </header>
+
+  <main>
+    <section class="navigation">
+      <nav class="subnav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="feeling.html">Share Your Feelings/Symptoms</a></li>
+          <li><a href="smartwatch.html">Your Smartwatch Data</a></li>
+          <li><a href="doctor.html">Connect with Specialist</a></li>
+          <li><a href="feedback.html">Feedback</a></li>
+
+        </ul>
+      </nav>
+    </section>
+    <section class="share-form">
+      <h1>Share Your Feelings & Symptoms</h1>
+      <form id="mentalHealthForm">
+        <div class="input-group">
+          <label for="feelings">Feelings:</label>
+          <textarea id="feelings" name="feelings" rows="4" required></textarea>
+        </div>
+        <div class="input-group">
+          <label for="symptoms">Symptoms:</label>
+          <textarea id="symptoms" name="symptoms" rows="4" required></textarea>
+        </div>
+        <button type="submit">Analyze</button>
+      </form>
+    </section>
+    
+    <section id="mentalHealthResult" class="mental-health">
+      <h2>Your Mental Health Condition</h2>
+      <p id="mentalHealthCondition">Mental health condition will be shown here.</p>
+    </section>
+
+    <section id="yogaTutorials" class="well-being-activities">
+      <h2>Yoga Tutorials for Mental Well-being</h2>
+      <div id="yogaVideos">
+        <!-- Yoga tutorial videos will be displayed here -->
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Mental Health Analysis - All rights reserved.</p>
+  </footer>
+
+  
+</body>
+<script src="script.js"></script>
+</html>

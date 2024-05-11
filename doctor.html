@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    li{
+      display:inline
+    }
+    ul{
+      margin:10px;
+      padding:20px;
+    }
+    li{
+      padding:20px;
+
+    }
+    a{
+      text-decoration: none;
+    }
+    </style>
+    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mental Health Specialist Locator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section class="navigation">
+        <nav class="subnav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="feeling.html">Share Your Feelings/Symptoms</a></li>
+            <li><a href="smartwatch.html">Your Smartwatch Data</a></li>
+            <li><a href="doctor.html">Connect with Specialist</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+  
+          </ul>
+        </nav>
+      </section>
+  <header>
+    <div class="logo">Mental Health Specialist Locator</div>
+  </header>
+
+  <main>
+    <section class="location-form">
+      <h1>Find a Mental Health Specialist Near You</h1>
+      <form id="locationForm">
+        <div class="input-group">
+          <label for="location">Enter Your Location:</label>
+          <input type="text" id="location" name="location" placeholder="Your City, State" required>
+        </div>
+        <button type="submit">Find Specialists</button>
+      </form>
+    </section>
+    
+    <section id="specialistResults" class="specialist-results">
+      <h2>Mental Health Specialists Near You</h2>
+      <ul id="specialistList">
+        <!-- Specialist details will be displayed here -->
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Mental Health Specialist Locator - All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,451 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  header {
+    background-color: #005580;
+    color: #fff;
+    padding: 20px 0;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 20px;
+  }
+  
+  .nav-links a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .main {
+    max-width: 960px;
+    margin: 20px auto;
+    padding: 0 20px;
+  }
+  
+  .feature {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .signin {
+    margin-top: 20px;
+  }
+  
+  .navigation {
+    text-align: center;
+  }
+  
+  .subnav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .subnav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  .subnav ul li a {
+    color: #005580;
+    text-decoration: none;
+  }
+
+  /* css for sign in */
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  header {
+    background-color: #005580;
+    color: #fff;
+    padding: 20px 0;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 20px;
+  }
+  
+  .logo {
+    font-size: 24px;
+  }
+  
+  .main {
+    max-width: 960px;
+    margin: 20px auto;
+    padding: 0 20px;
+  }
+  
+  .signin-form {
+    text-align: center;
+  }
+  
+  .signin-form h1 {
+    margin-bottom: 20px;
+  }
+  
+  .input-group {
+    margin-bottom: 20px;
+  }
+  
+  .input-group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #005580;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #003d4c;
+  }
+  
+  .forgot-password {
+    margin-top: 10px;
+  }
+  
+  .forgot-password a {
+    color: #005580;
+    text-decoration: none;
+  }
+  /* css for feeling */
+  /* body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  header {
+    background-color: #005580;
+    color: #fff;
+    padding: 20px 0;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 20px;
+  }
+  
+  .logo {
+    font-size: 24px;
+  }
+  
+  .main {
+    max-width: 960px;
+    margin: 20px auto;
+    padding: 0 20px;
+  }
+  
+  .share-form, .mental-health, .well-being-activities {
+    margin-bottom: 40px;
+  }
+  
+  .share-form h1, .mental-health h2, .well-being-activities h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .input-group {
+    margin-bottom: 20px;
+  }
+  
+  .input-group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .input-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #005580;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #003d4c;
+  }
+  
+  .youtube-video {
+    text-align: center;
+  } */
+
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  header {
+    background-color: #005580;
+    color: #fff;
+    padding: 20px 0;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 20px;
+  }
+  
+  .logo {
+    font-size: 24px;
+  }
+  
+  main {
+    max-width: 960px;
+    margin: 20px auto;
+    padding: 0 20px;
+  }
+  
+  .share-form, .mental-health, .well-being-activities {
+    margin-bottom: 40px;
+  }
+  
+  .share-form h1, .mental-health h2, .well-being-activities h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .input-group {
+    margin-bottom: 20px;
+  }
+  
+  .input-group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .input-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #005580;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #003d4c;
+  }
+  
+  #youtube-video {
+    text-align: center;
+  }
+  /* css for smartwatch */
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  header {
+    background-color: #005580;
+    color: #fff;
+    padding: 20px 0;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 20px;
+  }
+  
+  .logo {
+    font-size: 24px;
+  }
+  
+  .main {
+    max-width: 960px;
+    margin: 20px auto;
+    padding: 0 20px;
+  }
+  
+  .smartwatch-data, .mental-condition, .well-being-tutorials {
+    margin-bottom: 40px;
+  }
+  
+  .smartwatch-data h1, .mental-condition h2, .well-being-tutorials h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .smartwatch-data p, .mental-condition p {
+    text-align: center;
+  }
+  
+  .youtube-video {
+    text-align: center;
+  }
+
+  /* css for doctors */
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  header {
+    background-color: #005580;
+    color: #fff;
+    padding: 20px 0;
+  }
+  
+  .logo {
+    font-size: 24px;
+  }
+  
+  main {
+    max-width: 960px;
+    margin: 20px auto;
+    padding: 0 20px;
+  }
+  
+  .location-form {
+    margin-bottom: 40px;
+  }
+  
+  .location-form h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .input-group {
+    margin-bottom: 20px;
+  }
+  
+  .input-group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .input-group input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #005580;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #003d4c;
+  }
+  
+  .specialist-results {
+    text-align: center;
+  }
+  
+  #specialistList {
+    list-style: none;
+    padding: 0;
+  }
+  
+  #specialistList li {
+    margin-bottom: 10px;
+  }
+
+  /* css for feedback */
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  header {
+    background-color: #005580;
+    color: #fff;
+    padding: 20px 0;
+  }
+  
+  .logo {
+    font-size: 24px;
+  }
+  
+  main {
+    max-width: 960px;
+    margin: 20px auto;
+    padding: 0 20px;
+  }
+  
+  .feedback-form {
+    margin-bottom: 40px;
+  }
+  
+  .feedback-form h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .input-group {
+    margin-bottom: 20px;
+  }
+  
+  .input-group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .input-group input[type="text"],
+  .input-group input[type="email"],
+  .input-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #005580;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #003d4c;
+  }
