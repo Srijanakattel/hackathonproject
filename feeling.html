@@ -1,58 +1,69 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <link rel="stylesheet" href="styles.css">
+
   <style>
-   
-    li{
+     li{
       display:inline
     }
     ul{
-      margin:10px;
+     background-color: midnightblue;
       padding:20px;
     }
     li{
+      margin:20px;
       padding:20px;
 
     }
     a{
       text-decoration: none;
+      color:white;
     }
-    
-  </style>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mental Health Analysis</title>
-  <link rel="stylesheet" href="styles.css">
+    li:hover{
+      background-color: blue;
+    }
+    </style>
 </head>
 <body>
   <header>
-    <div class="logo">Mental Health Analysis</div>
+    <!-- <div class="logo">Emotion Tracker</div> -->
   </header>
+  <section class="navigation">
+    <nav class="subnav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="feeling.html">Share Your Feelings</a></li>
+        <li><a href="smartwatch.html">Your Smartwatch Data</a></li>
+        <li><a href="doctor.html">Connect with Specialist</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+      </ul>
+    </nav>
+  </section>
 
   <main>
-    <section class="navigation">
-      <nav class="subnav">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="feeling.html">Share Your Feelings/Symptoms</a></li>
-          <li><a href="smartwatch.html">Your Smartwatch Data</a></li>
-          <li><a href="doctor.html">Connect with Specialist</a></li>
-          <li><a href="feedback.html">Feedback</a></li>
-
-        </ul>
-      </nav>
-    </section>
-    <section class="share-form">
-      <h1>Share Your Feelings & Symptoms</h1>
-      <form id="mentalHealthForm">
+    <section class="emotion-form">
+      <h1>How are you feeling ?</h1>
+      <form id="emotionForm">
         <div class="input-group">
-          <label for="feelings">Feelings:</label>
-          <textarea id="feelings" name="feelings" rows="4" required></textarea>
+          <label for="feeling">Select your feeling:</label>
+          <select id="feeling" name="feeling">
+            <option value="😢">Feeling sad</option>
+            <option value="😄">Feeling happy</option>
+            <option value="🤔">Feeling doubtful</option>
+            <option value="😔">Feeling lonely</option>
+            <option value="😴">Feeling sleepy</option>
+          </select>
         </div>
         <div class="input-group">
-          <label for="symptoms">Symptoms:</label>
-          <textarea id="symptoms" name="symptoms" rows="4" required></textarea>
+          <label for="frequency">How often do you feel this way?</label>
+          <input type="radio" id="daily" name="frequency" value="daily">
+          <label for="daily">Daily</label>
+          <input type="radio" id="sometimes" name="frequency" value="sometimes">
+          <label for="sometimes">Sometimes</label>
         </div>
         <button type="submit">Analyze</button>
       </form>
@@ -62,17 +73,10 @@
       <h2>Your Mental Health Condition</h2>
       <p id="mentalHealthCondition">Mental health condition will be shown here.</p>
     </section>
-
-    <section id="yogaTutorials" class="well-being-activities">
-      <h2>Yoga Tutorials for Mental Well-being</h2>
-      <div id="yogaVideos">
-        <!-- Yoga tutorial videos will be displayed here -->
-      </div>
-    </section>
   </main>
 
   <footer>
-    <p>&copy; 2024 Mental Health Analysis - All rights reserved.</p>
+    <p>&copy; 2024 Sahayog - All rights reserved.</p>
   </footer>
 
   

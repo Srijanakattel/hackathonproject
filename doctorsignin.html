@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+     li{
+      display:inline
+    }
+    ul{
+     background-color: midnightblue;
+      padding:20px;
+    }
+    li{
+      margin:20px;
+      padding:20px;
+
+    }
+    a{
+      text-decoration: none;
+      color:white;
+    }
+    li:hover{
+      background-color: blue;
+    }
+    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mental Health Expert Sign In</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Mental Health Expert Sign In</h1>
+  </header>
+  <section class="navigation">
+    <nav class="subnav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="feeling.html">Share Your Feelings</a></li>
+        <li><a href="smartwatch.html">Your Smartwatch Data</a></li>
+        <li><a href="doctor.html">Connect with Specialist</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+      </ul>
+    </nav>
+  </section>
+
+  <main>
+    <section class="sign-in-form">
+      <h2>Sign In to Sahayog</h2>
+      <form action="#">
+        <div class="input-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="input-group">
+          <label for="email_phone">Email/Phone Number:</label>
+          <input type="text" id="email_phone" name="email_phone" required>
+        </div>
+        <div class="input-group">
+          <label for="medicallicence">medical Licence Number:</label>
+          <input type="digit" id="medicallicence" name="medicallicence" required>
+        </div>
+        <div class="input-group">
+          <label for="experience">Experience:</label>
+          <input type="text/number" id="experience" name="experience" required>
+        </div>
+        <div class="input-group">
+          <label for="expertise">Expertise Field:</label>
+          <input type="text" id="expertise" name="expertise" required>
+        </div>
+        <div class="input-group">
+          <label for="qualification">Qualification:</label>
+          <input type="text" id="qualification" name="qualification" required>
+        </div>
+        
+        <div class="input-group">
+          <label for="location">Location:</label>
+          <input type="text" id="location" name="location" required>
+        </div>
+        
+        <button type="submit">Sign In</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; Sahayog - All rights reserved.</p>
+  </footer>
+</body>
+</html>

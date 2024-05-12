@@ -200,7 +200,7 @@ body {
     text-align: center;
   } */
 
-  body {
+  /* body {
     margin: 0;
     font-family: Arial, sans-serif;
   }
@@ -268,6 +268,68 @@ body {
   
   #youtube-video {
     text-align: center;
+  } */
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  header {
+    background-color: #005580;
+    color: #fff;
+    padding: 20px 0;
+  }
+  
+  .logo {
+    font-size: 24px;
+  }
+  
+  main {
+    max-width: 960px;
+    margin: 20px auto;
+    padding: 0 20px;
+  }
+  
+  .emotion-form {
+    margin-bottom: 40px;
+  }
+  
+  .emotion-form h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .input-group {
+    margin-bottom: 20px;
+  }
+  
+  .input-group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .input-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .input-group input[type="radio"] {
+    margin-right: 5px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #005580;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #003d4c;
   }
   /* css for smartwatch */
   body {
@@ -316,7 +378,7 @@ body {
   }
 
   /* css for doctors */
-  body {
+  /* body {
     margin: 0;
     font-family: Arial, sans-serif;
   }
@@ -386,8 +448,41 @@ body {
   
   #specialistList li {
     margin-bottom: 10px;
+  } */
+  body {
+    font-family: Arial, sans-serif;
   }
-
+  
+  header {
+    background-color: #005580;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  h1, h2, h3 {
+    color: #005580;
+  }
+  
+  .main {
+    max-width: 960px;
+    margin: 20px auto;
+    padding: 0 20px;
+  }
+  
+  .specialist-card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .footer {
+    background-color: #005580;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
   /* css for feedback */
   body {
     margin: 0;
@@ -448,4 +543,76 @@ body {
   
   button:hover {
     background-color: #003d4c;
+  }
+  /* css for signin doctor */
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  header {
+    background-color: #005580;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .sign-in-form {
+    margin-bottom: 40px;
+  }
+  
+  .sign-in-form h2 {
+    margin-bottom: 20px;
+  }
+  
+  .input-group {
+    margin-bottom: 20px;
+  }
+  
+  .input-group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #005580;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #003d4c;
+  }
+  
+  .nearby-specialists {
+    border-top: 1px solid #ccc;
+    padding-top: 20px;
+  }
+  
+  .nearby-specialists h2 {
+    margin-bottom: 20px;
+  }
+  
+  #specialistsList {
+    list-style: none;
+    padding: 0;
+  }
+  
+  #specialistsList li {
+    margin-bottom: 10px;
   }

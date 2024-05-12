@@ -2,19 +2,24 @@
 <html lang="en">
 <head>
   <style>
-    li{
+     li{
       display:inline
     }
     ul{
-      margin:10px;
+     background-color: midnightblue;
       padding:20px;
     }
     li{
+      margin:20px;
       padding:20px;
 
     }
     a{
       text-decoration: none;
+      color:white;
+    }
+    li:hover{
+      background-color: blue;
     }
     </style>
   <meta charset="UTF-8">
@@ -53,6 +58,10 @@
         <div class="input-group">
           <label for="password">Password:</label>
           <input type="password" id="password" name="password" required>
+        </div>
+        <div class="input-group">
+          <label for="location">location:</label>
+          <input type="text" id="location" name="location" required>
         </div>
         <button type="submit">Sign In</button>
       </form>

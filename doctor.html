@@ -2,19 +2,24 @@
 <html lang="en">
 <head>
   <style>
-    li{
+     li{
       display:inline
     }
     ul{
-      margin:10px;
+     background-color: midnightblue;
       padding:20px;
     }
     li{
+      margin:20px;
       padding:20px;
 
     }
     a{
       text-decoration: none;
+      color:white;
+    }
+    li:hover{
+      background-color: blue;
     }
     </style>
     
@@ -28,7 +33,7 @@
         <nav class="subnav">
           <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="feeling.html">Share Your Feelings/Symptoms</a></li>
+            <li><a href="feeling.html">Share Your Feelings</a></li>
             <li><a href="smartwatch.html">Your Smartwatch Data</a></li>
             <li><a href="doctor.html">Connect with Specialist</a></li>
             <li><a href="feedback.html">Feedback</a></li>
@@ -54,16 +59,45 @@
     
     <section id="specialistResults" class="specialist-results">
       <h2>Mental Health Specialists Near You</h2>
-      <ul id="specialistList">
-        <!-- Specialist details will be displayed here -->
-      </ul>
+      <p id="specialistList">
+        Specialist details will be displayed here 
+      </p>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2024 Mental Health Specialist Locator - All rights reserved.</p>
+    <p>&copy; 2024 Sahayog - All rights reserved.</p>
   </footer>
 
-  <script src="script.js"></script>
+  
 </body>
-</html>
+<script src="script1.js"></script>
+</html> 
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mental Health Specialists</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Mental Health Specialists Near You</h1>
+  </header>
+
+  <main>
+    <section class="specialists-list">
+      <h2>List of Mental Health Specialists</h2>
+      <div id="specialists"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; Sahayog - All rights reserved.</p>
+  </footer>
+
+  
+</body>
+<script src="script1.js"></script>
+</html> -->

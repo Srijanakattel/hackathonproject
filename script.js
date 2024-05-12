@@ -1,45 +1,37 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const form = document.getElementById('mentalHealthForm');
-    form.addEventListener('submit', async (e) => {
-      e.preventDefault();
-      
-      const feelings = document.getElementById('feelings').value;
-      const symptoms = document.getElementById('symptoms').value;
-  
-      try {
-        const response = await fetch('/analyze-mental-health', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json'
-          },
-          body: JSON.stringify({ feelings, symptoms })
-        });
-  
-        if (!response.ok) {
-          throw new Error('Failed to analyze mental health');
-        }
-  
-        const { mentalHealthCondition, yogaTutorials } = await response.json();
-  
-        // Update mental health condition
-        const mentalHealthConditionElement = document.getElementById('mentalHealthCondition');
-        mentalHealthConditionElement.textContent = mentalHealthCondition;
-  
-        // Update yoga tutorials
-        const yogaVideosElement = document.getElementById('yogaVideos');
-        yogaVideosElement.innerHTML = '';
-        yogaTutorials.forEach((tutorial) => {
-          const iframe = document.createElement('iframe');
-          iframe.setAttribute('width', '560');
-          iframe.setAttribute('height', '315');
-          iframe.setAttribute('src', tutorial.url);
-          iframe.setAttribute('frameborder', '0');
-          iframe.setAttribute('allow', 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture');
-          iframe.setAttribute('allowfullscreen', '');
-          yogaVideosElement.appendChild(iframe);
-        });
-      } catch (error) {
-        console.error('Error analyzing mental health:', error);
-      }
-    });
+  const form = document.getElementById('emotionForm');
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+
+    const feeling = document.getElementById('feeling').value;
+    const frequency = document.querySelector('input[name="frequency"]:checked').value;
+
+    // Perform analysis based on feeling and frequency
+    let mentalHealthCondition;
+    if (feeling === '😢' && frequency === 'daily') {
+      mentalHealthCondition = 'You may be experiencing persistent sadness. Consider seeking support from a mental health professional.';
+    } else if (feeling === '😢' && frequency === 'sometimes') {
+      mentalHealthCondition = 'You might be experiencing occasional sadness. Engaging in self-care activities can help.';
+    } else if (feeling === '😄' && frequency === 'daily') {
+      mentalHealthCondition = 'You seem to be consistently happy. Keep up the positive vibes!';
+    } else if (feeling === '😄' && frequency === 'sometimes') {
+      mentalHealthCondition = 'You experience happiness occasionally. Finding activities that bring joy can enhance your well-being.';
+    } else if (feeling === '🤔' && frequency === 'daily') {
+      mentalHealthCondition = 'Persistent doubt may affect your confidence. Practicing self-reflection and seeking clarity can be beneficial.';
+    } else if (feeling === '🤔' && frequency === 'sometimes') {
+      mentalHealthCondition = 'Occasional doubt is normal. Cultivating self-assurance through affirmations and support networks can help.';
+    } else if (feeling === '😔' && frequency === 'daily') {
+      mentalHealthCondition = 'Consistent feelings of loneliness can impact mental health. Connecting with others and seeking companionship may be beneficial.';
+    } else if (feeling === '😔' && frequency === 'sometimes') {
+      mentalHealthCondition = 'Feeling lonely at times is common. Engaging in social activities and building meaningful connections can alleviate loneliness.';
+    } else if (feeling === '😴' && frequency === 'daily') {
+      mentalHealthCondition = 'Persistent sleepiness may indicate underlying issues. Ensuring a healthy sleep routine and addressing potential causes can improve overall well-being.';
+    } else if (feeling === '😴' && frequency === 'sometimes') {
+      mentalHealthCondition = 'Feeling sleepy occasionally is normal. Prioritizing rest and relaxation can help maintain energy levels.';
+    }
+
+    // Update mental health condition in the UI
+    const mentalHealthConditionElement = document.getElementById('mentalHealthCondition');
+    mentalHealthConditionElement.textContent = mentalHealthCondition;
   });
+});
